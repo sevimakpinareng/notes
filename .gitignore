@@ -1,0 +1,32 @@
+# Flutter/Dart üretilen dosyalar
+.dart_tool/
+build/
+*.iml
+*.iws
+.flutter-plugins-dependencies
+
+# IDE
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# iOS üretilen dosyalar
+ios/Flutter/ephemeral/
+ios/Pods/
+ios/.symlinks/
+ios/Runner.xcworkspace/
+*.xcworkspace/xcuserdata/
+
+# Android üretilen dosyalar
+android/.gradle/
+android/local.properties
+android/key.properties
+*.jks
+
+# Log dosyaları
+*.log
+
+# pubspec.lock dahil edilir (reproducible builds)
+!pubspec.lock

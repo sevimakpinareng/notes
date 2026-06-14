@@ -1,0 +1,28 @@
+name: notes
+description: "Notes — Flutter + SQLite çok kullanıcılı not yönetimi uygulaması (Mobil Programlama dönem projesi)"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # SQLite veritabanı paketi (Hafta 6 ders materyali)
+  sqflite: ^2.3.3
+
+  # Veritabanı dosya yolu işlemleri için (Hafta 6 ders materyali)
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,4 @@
+#include "Generated.xcconfig"
+// Xcode 26 simülatör codesign workaround
+CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]=NO
+CODE_SIGNING_REQUIRED[sdk=iphonesimulator*]=NO
