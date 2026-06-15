@@ -216,10 +216,18 @@ class _NotDuzenleEkraniState extends State<NotDuzenleEkrani> {
             ),
           ),
         ),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: widget.kategoriler.map(_kategoriCipi).toList(),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Expanded(
+              child: Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: widget.kategoriler.map(_kategoriCipi).toList(),
+              ),
+            ),
+            const Text('📓', style: TextStyle(fontSize: 72)),
+          ],
         ),
         const SizedBox(height: 22),
         // ── Öncelik seçimi — DropdownButton ──────────────────────────────
