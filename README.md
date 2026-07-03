@@ -1,6 +1,6 @@
 # Notes
 
-Mobil Programlama dersi dönem projesi — Flutter + SQLite ile geliştirilmiş çok kullanıcılı not yönetimi uygulaması.
+Flutter + SQLite ile geliştirilmiş çok kullanıcılı not yönetimi uygulaması. Her kullanıcı kendi hesabıyla giriş yaparak notlarını oluşturur, düzenler ve kategori, öncelik, favori ve arama özellikleriyle organize eder; ayrıca kişisel istatistiklerini görüntüler. Uygulama; katmanlı DAO mimarisi, ilişkisel bir SQLite şeması (yabancı anahtar korumalı) ve özelleştirilmiş widget'lar üzerine kuruludur.
 
 ---
 
@@ -36,10 +36,10 @@ Mobil Programlama dersi dönem projesi — Flutter + SQLite ile geliştirilmiş 
 
 ---
 
-## Özellik → Ders Konusu Eşleme
+## Teknik Öne Çıkanlar
 
-| Özellik | Ders Konusu |
-|---------|-------------|
+| Özellik | Teknik Kavram |
+|---------|---------------|
 | `Not extends Kayit` | Kalıtım (`abstract class`, `extends`, `super`) |
 | `Kullanici`, `Not`, `Kategori`, `Ayar` model sınıfları | Nesne Tabanlı Programlama, `factory constructor`, `const` |
 | `NotDao`, `KategoriDao`, `KullaniciDao`, `AyarDao` | DAO deseni, `Future`, `async/await` |
@@ -139,7 +139,7 @@ lib/
 
 ```bash
 # Depoyu klonla
-git clone <repo-url>
+git clone https://github.com/sevimakpinareng/notes.git
 cd notes
 
 # Bağımlılıkları yükle
@@ -158,12 +158,9 @@ flutter analyze
 
 ## Demo Giriş
 
-| Alan | Değer |
-|------|-------|
-| Kullanıcı adı | `demo` |
-| Şifre | `demo123` |
+Uygulama ilk açıldığında hazır bir demo hesabıyla giriş yapabilir veya kayıt ekranından kendi hesabınızı oluşturabilirsiniz.
 
-> **Not:** Şifreler veritabanında düz metin olarak saklanmaktadır. Bu, eğitim amaçlı basit bir doğrulama yöntemidir; üretim uygulamalarında bcrypt gibi bir hash algoritması kullanılmalıdır.
+> **Güvenlik notu:** Bu sürümde şifreler basitlik adına düz metin olarak saklanmaktadır. Üretim ortamında bcrypt gibi bir hash algoritması kullanılması önerilir.
 
 ---
 
